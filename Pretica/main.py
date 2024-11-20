@@ -17,11 +17,12 @@ while True:
 
     #navegabilidade
     if (opc == 1):
-        #função lê os dados de aluno e retorna um dicionário
-        #dicionário é adicionado na lista de alunos
+       aluno = cadastrar(id) #função lê os dados de aluno e retorna um dicionário
+       alunos.append(aluno) #dicionário é adicionado na lista de alunos
+       id += 1
         pass
     elif (opc == 2):
-        #função imprime todos os alunos em tela
+       print_aluno(alunos) #função imprime todos os alunos em tela
     elif (opc == 3):
         #busca um aluno por id e apresenta seus dados se existir
         pass
@@ -29,7 +30,7 @@ while True:
         #exibe uma lista com todos os alunos filtrados por imc
         pass
     elif (opc == 5):
-        #salva os dados e pergunta se deseja sair do programa
+       salvar(alunos,id) #salva os dados e pergunta se deseja sair do programa
         break
     else:
         print("Opção inválida!")
