@@ -55,3 +55,7 @@ def ler_dados():
             return lista
     except:
         print("Ocorreu erro na leitura do arquivos")
+
+def imc(peso, altura):
+    return peso / (altura ** 2)
+
